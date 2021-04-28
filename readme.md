@@ -26,8 +26,8 @@
         <li><a href="#layout-figma">Figma</a></li>
       </ul>
     </li>
-    <li><a href="#instalacao">Instalação</a></li>
-    <li><a href="#licenca">Licença</a></li>
+    <li><a href="#instalação">Instalação</a></li>
+    <li><a href="#licença">Licença</a></li>
   </ol>
 </details>
 
@@ -85,6 +85,6 @@
    ```   
    
 <!-- LICENSE -->
-## License
+## Licença
 
 Distributed under the MIT License. See `LICENSE` for more information.
