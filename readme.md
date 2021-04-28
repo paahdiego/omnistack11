@@ -2,10 +2,10 @@
 <br />
 <p align="center">
 
-  <img src="./frontend/assets/logo.svg" alt="Be The Hero" width="100">
+  <img src=".github/bethehero.svg" alt="Be The Hero" width="100">
 
 
-  <h3 align="center">DevQuiz</h3>
+  <h3 align="center">Be The Hero</h3>
 
   <p align="center">
     Repositório com os arquivos e aplicação "Be The Hero" replicados da Semana Omnistack 11.0, Evento disponibilizado pela Rocketseat.
