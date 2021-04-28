@@ -2,7 +2,7 @@
 <br />
 <p align="center">
 
-  <img src="frontend/assets/logo.svg" alt="DevQuiz" width="100">
+  <img src=".github/bethehero.png" alt="Be The Hero" width="100">
 
 
   <h3 align="center">DevQuiz</h3>
