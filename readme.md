@@ -37,7 +37,7 @@
 <!-- ABOUT THE PROJECT -->
 ## Sobre o Projeto
   <p align="center">
-  <img src=".github/bethehero.png" alt="Be The Hero" width="400">
+  <img src=".github/bethehero.png" alt="Be The Hero" height="400">
   </p>
   </br>
   Trata-se de uma plataforma que permite que ONGs criem seus cadastros e possam cadastrar casos que precisam de ajuda. O cadastro das ONGs e dos casos é feito pelo app web desenvolvido em ReactJS. O backend foi desenvolvido utilizando NodeJS e a aplicação mobile (iOS e Android) que serve para que usuários que queiram contribuir com essas ONGs através de doações monetárias, será desenvolvida em Flutter (Em Breve).
