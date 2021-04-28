@@ -8,7 +8,7 @@
   <h3 align="center">Be The Hero</h3>
 
   <p align="center">
-    Repositório com os arquivos e aplicação "Be The Hero" replicados da Semana Omnistack 11.0, Evento disponibilizado pela Rocketseat.
+    Repositório com os arquivos e aplicação "Be The Hero" replicados da Semana Omnistack 11.0, evento disponibilizado pela Rocketseat.
     <br />
   </p>
 </p>
@@ -16,7 +16,7 @@
 
 
 <!-- TABLE OF CONTENTS -->
-<details open="open">
+<details open="close">
   <summary>Sumário</summary>
   <ol>
     <li>
@@ -24,7 +24,6 @@
       <ul>
         <li><a href="#tecnologias-utilizadas">Tecnologias utilizadas</a></li>
         <li><a href="#layout-figma">Figma</a></li>
-
       </ul>
     </li>
     <li><a href="#instalacao">Instalação</a></li>
