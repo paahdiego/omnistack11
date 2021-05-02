@@ -2,13 +2,13 @@
 <br />
 <p align="center">
 
-  <img src="./frontend/assets/logo.svg" alt="Be The Hero" width="100">
+  <img src=".github/bethehero.svg" alt="Be The Hero" width="200">
 
 
-  <h3 align="center">DevQuiz</h3>
+  <h3 align="center">Be The Hero</h3>
 
   <p align="center">
-    Repositório com os arquivos e aplicação "Be The Hero" replicados da Semana Omnistack 11.0, Evento disponibilizado pela Rocketseat.
+    Repositório com os arquivos e aplicação "Be The Hero" replicados da Semana Omnistack 11.0, evento disponibilizado pela Rocketseat.
     <br />
   </p>
 </p>
@@ -16,7 +16,7 @@
 
 
 <!-- TABLE OF CONTENTS -->
-<details open="open">
+<details open="close">
   <summary>Sumário</summary>
   <ol>
     <li>
@@ -24,11 +24,10 @@
       <ul>
         <li><a href="#tecnologias-utilizadas">Tecnologias utilizadas</a></li>
         <li><a href="#layout-figma">Figma</a></li>
-
       </ul>
     </li>
-    <li><a href="#instalacao">Instalação</a></li>
-    <li><a href="#licenca">Licença</a></li>
+    <li><a href="#instalação">Instalação</a></li>
+    <li><a href="#licença">Licença</a></li>
   </ol>
 </details>
 
@@ -37,7 +36,7 @@
 <!-- ABOUT THE PROJECT -->
 ## Sobre o Projeto
   <p align="center">
-  <img src=".github/bethehero.png" alt="Be The Hero" width="250">
+  <img src=".github/bethehero.png" alt="Be The Hero" height="400">
   </p>
   </br>
   Trata-se de uma plataforma que permite que ONGs criem seus cadastros e possam cadastrar casos que precisam de ajuda. O cadastro das ONGs e dos casos é feito pelo app web desenvolvido em ReactJS. O backend foi desenvolvido utilizando NodeJS e a aplicação mobile (iOS e Android) que serve para que usuários que queiram contribuir com essas ONGs através de doações monetárias, será desenvolvida em Flutter (Em Breve).
@@ -84,8 +83,8 @@
    ```sh
    flutter run
    ```   
-
+   
 <!-- LICENSE -->
-## License
+## Licença
 
 Distributed under the MIT License. See `LICENSE` for more information.
