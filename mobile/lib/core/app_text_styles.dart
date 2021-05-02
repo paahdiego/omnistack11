@@ -4,9 +4,9 @@ import 'package:google_fonts/google_fonts.dart';
 import 'app_colors.dart';
 
 class AppTextStyles {
-  static final TextStyle title = GoogleFonts.notoSans(
+  /* static final TextStyle title = GoogleFonts.notoSans(
     color: AppColors.redHero,
     fontSize: 20,
     fontWeight: FontWeight.w400,
-  );
+  ); */
 }

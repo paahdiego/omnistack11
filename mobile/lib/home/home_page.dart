@@ -1,4 +1,5 @@
 import 'package:BeTheHero/core/core.dart';
+import 'package:BeTheHero/home/widgets/appbar/app_bar_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -12,7 +13,9 @@ class HomePage extends StatelessWidget {
           ),
         ],
         child: Consumer<DeviceScreenSize>(builder: (context, dss, child) {
-          return Scaffold();
+          return Scaffold(
+            appBar: AppBarWidget(),
+          );
         }));
   }
 }
