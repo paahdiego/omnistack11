@@ -1,11 +1,15 @@
 import 'package:BeTheHero/core/core.dart';
 import 'package:BeTheHero/home/widgets/details_button/details_button_widget.dart';
+import 'package:BeTheHero/shared/models/case_model.dart';
 import 'package:flutter/material.dart';
 
 class CaseWidget extends StatelessWidget {
   final VoidCallback onPressed;
+  final CaseModel caso;
 
-  const CaseWidget({Key? key, required this.onPressed}) : super(key: key);
+  const CaseWidget({Key? key, required this.onPressed, required this.caso})
+      : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -40,7 +44,7 @@ class CaseWidget extends StatelessWidget {
                       Align(
                         alignment: Alignment.centerLeft,
                         child: Text(
-                          "Cadelinha atropelada",
+                          caso.title,
                           style: AppTextStyles.texts(
                             15,
                           ),
@@ -67,7 +71,7 @@ class CaseWidget extends StatelessWidget {
                       Align(
                         alignment: Alignment.centerLeft,
                         child: Text(
-                          "APAD",
+                          caso.name,
                           style: AppTextStyles.texts(
                             15,
                           ),
@@ -99,7 +103,7 @@ class CaseWidget extends StatelessWidget {
             child: Align(
               alignment: Alignment.centerLeft,
               child: Text(
-                "R\$ 120,00 reais",
+                "R\$ ${caso.value} reais",
                 style: AppTextStyles.texts(
                   15,
                 ),

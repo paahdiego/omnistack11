@@ -2,7 +2,7 @@ import 'package:BeTheHero/core/core.dart';
 import 'package:flutter/material.dart';
 
 class AppBarWidget extends PreferredSize {
-  AppBarWidget(double paddingTop)
+  AppBarWidget(double paddingTop, String total)
       : super(
           preferredSize: Size.fromHeight(100),
           child: Container(
@@ -21,7 +21,7 @@ class AppBarWidget extends PreferredSize {
                     style: AppTextStyles.texts(15),
                     children: [
                       TextSpan(
-                        text: "43 casos",
+                        text: "$total casos",
                         style: AppTextStyles.texts(
                           15,
                           fontWeight: FontWeight.w500,

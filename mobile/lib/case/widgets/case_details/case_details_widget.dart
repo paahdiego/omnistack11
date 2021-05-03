@@ -1,7 +1,11 @@
 import 'package:BeTheHero/core/core.dart';
+import 'package:BeTheHero/shared/models/case_model.dart';
 import 'package:flutter/material.dart';
 
 class CaseDetailsWidget extends StatelessWidget {
+  final CaseModel caso;
+
+  const CaseDetailsWidget({Key? key, required this.caso}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -25,7 +29,7 @@ class CaseDetailsWidget extends StatelessWidget {
                       Align(
                         alignment: Alignment.centerLeft,
                         child: Text(
-                          "CASO",
+                          "CASO:",
                           style: AppTextStyles.secondaryTitle(
                             14,
                             fontWeight: FontWeight.w700,
@@ -36,7 +40,7 @@ class CaseDetailsWidget extends StatelessWidget {
                       Align(
                         alignment: Alignment.centerLeft,
                         child: Text(
-                          "Cadelinha atropelada",
+                          caso.title,
                           style: AppTextStyles.texts(
                             15,
                           ),
@@ -63,7 +67,7 @@ class CaseDetailsWidget extends StatelessWidget {
                       Align(
                         alignment: Alignment.centerLeft,
                         child: Text(
-                          "APAD",
+                          caso.name,
                           style: AppTextStyles.texts(
                             15,
                           ),
@@ -95,7 +99,7 @@ class CaseDetailsWidget extends StatelessWidget {
             child: Align(
               alignment: Alignment.centerLeft,
               child: Text(
-                "A cadelinha Jolie foi atropelada por um carro no bairro Santana e teve que passar por uma cirurgia às pressas",
+                caso.description,
                 style: AppTextStyles.texts(
                   15,
                 ),
@@ -122,7 +126,7 @@ class CaseDetailsWidget extends StatelessWidget {
             child: Align(
               alignment: Alignment.centerLeft,
               child: Text(
-                "R\$ 120,00 reais",
+                "R\$ ${caso.value} reais",
                 style: AppTextStyles.texts(
                   15,
                 ),
