@@ -5,8 +5,8 @@ class AppColors {
   static final Color primaryTitle = Color(0xFF13131A);
   static final Color secondaryTitle = Color(0xFF41414D);
   static final Color primaryText = Color(0xFF737380);
-  static final Color secondaryText = Color(0xFFA8A8B3);
   static final Color inputBg = Color(0xFFFFFFFF);
   static final Color inputLine = Color(0xFFDCDCE6);
   static final Color backgroundColor = Color(0xFFF0F0F5);
+  static final Color transparent = Color(0x00FFFFFF);
 }

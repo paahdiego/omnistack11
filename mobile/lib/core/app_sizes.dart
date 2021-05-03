@@ -1,32 +1,29 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
 
 class DeviceScreenSize extends ChangeNotifier {
-  double displayWidth;
-  double displayHeight;
-  Size size;
+  double _displayWidth = 0;
+  double _displayHeight = 0;
+  double _paddingTop = 0;
+
+  MediaQueryData mediaQuery;
 
   DeviceScreenSize({
-    this.displayWidth = 0,
-    this.displayHeight = 0,
-    required this.size,
+    required this.mediaQuery,
   }) {
-    this.displayWidth = this.size.width;
-    this.displayHeight = this.size.height;
-    if (this.displayWidth >= 768) {
+    this._displayWidth = this.mediaQuery.size.width;
+    this._displayHeight = this.mediaQuery.size.height;
+    this._paddingTop = this.mediaQuery.padding.top;
+    if (this._displayWidth >= 768) {
       //iPad Pro 9.7 pol
-
-    } else if (this.displayWidth >= 375) {
+    } else if (this._displayWidth >= 375) {
       //iPhone 11 Pro - x pol 375
       //iPhone 12 - 6.1 pol 390
-
     } else {
       //iPhone SE 1st Gen.
     }
   }
 
-  @override
-  String toString() =>
-      'DeviceScreenSize(size: $size, displayWidth: $displayWidth, displayHeight: $displayHeight)';
+  double get paddingTop => this._paddingTop;
+  double get displayWidth => this._displayWidth;
+  double get displayHeight => this._displayHeight;
 }
