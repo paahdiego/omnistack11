@@ -2,6 +2,9 @@ import 'package:BeTheHero/core/core.dart';
 import 'package:flutter/material.dart';
 
 class DetailsButton extends StatefulWidget {
+  final VoidCallback onPressed;
+
+  const DetailsButton({Key? key, required this.onPressed}) : super(key: key);
   @override
   _DetailsButtonState createState() => _DetailsButtonState();
 }
@@ -10,7 +13,7 @@ class _DetailsButtonState extends State<DetailsButton> {
   @override
   Widget build(BuildContext context) {
     return TextButton(
-      onPressed: () {},
+      onPressed: widget.onPressed,
       style: ButtonStyle(
         elevation: MaterialStateProperty.all(0),
         overlayColor: MaterialStateProperty.all(Colors.red[200]),

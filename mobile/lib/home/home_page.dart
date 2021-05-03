@@ -1,3 +1,4 @@
+import 'package:BeTheHero/case/case_page.dart';
 import 'package:BeTheHero/core/core.dart';
 import 'package:BeTheHero/home/widgets/appbar/app_bar_widget.dart';
 import 'package:BeTheHero/home/widgets/case/case_widget.dart';
@@ -5,6 +6,15 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class HomePage extends StatelessWidget {
+  void navigateToCasePage(context, dss) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => CasePage(dss: dss),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
@@ -47,7 +57,9 @@ class HomePage extends StatelessWidget {
                   Expanded(
                     child: ListView.separated(
                       itemBuilder: (context, index) {
-                        return CaseWidget();
+                        return CaseWidget(
+                          onPressed: () => navigateToCasePage(context, dss),
+                        );
                       },
                       separatorBuilder: (builder, _) {
                         return SizedBox(height: 16);

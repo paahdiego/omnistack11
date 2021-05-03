@@ -1,5 +1,6 @@
 import 'package:BeTheHero/core/core.dart';
 import 'package:BeTheHero/home/home_page.dart';
+import 'package:BeTheHero/case/case_page.dart';
 import 'package:flutter/material.dart';
 
 class SplashPage extends StatelessWidget {

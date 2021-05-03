@@ -1,11 +1,7 @@
 import 'package:BeTheHero/core/core.dart';
-import 'package:BeTheHero/home/widgets/details_button/details_button_widget.dart';
 import 'package:flutter/material.dart';
 
-class CaseWidget extends StatelessWidget {
-  final VoidCallback onPressed;
-
-  const CaseWidget({Key? key, required this.onPressed}) : super(key: key);
+class CaseDetailsWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -85,6 +81,33 @@ class CaseWidget extends StatelessWidget {
             child: Align(
               alignment: Alignment.centerLeft,
               child: Text(
+                "DESCRIÇÃO: ",
+                style: AppTextStyles.secondaryTitle(
+                  14,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+            ),
+          ),
+          SizedBox(height: 10),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 24),
+            child: Align(
+              alignment: Alignment.centerLeft,
+              child: Text(
+                "A cadelinha Jolie foi atropelada por um carro no bairro Santana e teve que passar por uma cirurgia às pressas",
+                style: AppTextStyles.texts(
+                  15,
+                ),
+              ),
+            ),
+          ),
+          SizedBox(height: 24),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 24),
+            child: Align(
+              alignment: Alignment.centerLeft,
+              child: Text(
                 "VALOR: ",
                 style: AppTextStyles.secondaryTitle(
                   14,
@@ -106,12 +129,7 @@ class CaseWidget extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 32),
-          Container(
-            height: 1,
-            color: AppColors.inputLine,
-          ),
-          DetailsButton(onPressed: onPressed),
+          SizedBox(height: 24),
         ],
       ),
     );
