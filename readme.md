@@ -45,7 +45,8 @@
 
 * [ReactJS](https://pt-br.reactjs.org/)
 * [NodeJS](https://nodejs.org/en/)
-* [Flutter](https://flutter.dev/) (Em Breve)
+* [Flutter](https://flutter.dev/)
+* [Dart](https://dart.dev/)
 
 ### Layout Figma
 
@@ -69,7 +70,7 @@
    npm install
    ```
    
-   Para a aplicação Flutter, basta acessar a pasta e utilizar o comando (Em breve): 
+   Para a aplicação Flutter, basta acessar a pasta mobile e utilizar o comando: 
    ```sh
    flutter pub get
    ```
@@ -79,7 +80,7 @@
    ```sh
    npm start
    ```   
-   App em Flutter (Em breve):
+   App em Flutter:
    ```sh
    flutter run
    ```   
